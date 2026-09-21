@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Showcase de Proyectos</title>
+  <!-- Tailwind CSS CDN para estilos rápidos y modernos -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen p-6 md:p-12">
+
+  <div class="max-w-6xl mx-auto">
+    <header class="mb-10 text-center">
+      <h1 class="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">Proyectos & Arquitectura</h1>
+      <p class="mt-3 text-slate-400">Soluciones de software, infraestructura y experiencias interactivas.</p>
+    </header>
+
+    <!-- Grid de Tarjetas -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Tarjeta 1: Sistema Web -->
+      <div class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden hover:border-indigo-500 transition shadow-lg flex flex-col justify-between">
+        <div class="p-6">
+          <div class="flex items-center justify-between gap-2 mb-3">
+            <span class="text-xs font-semibold px-2.5 py-1 bg-indigo-900/60 text-indigo-300 rounded-full border border-indigo-700">Full Stack & GIS</span>
+            <span class="text-xs text-slate-400 font-mono">PHP / MySQL</span>
+          </div>
+          <h2 class="text-xl font-bold text-white mb-2">Sistema de Gestión & Seguimiento Territorial</h2>
+          <p class="text-slate-300 text-sm mb-4">
+            Plataforma web técnica para trazabilidad de obras civiles con geolocalización dinámica y control de perfiles.
+          </p>
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            <span class="text-xs bg-slate-700 px-2 py-0.5 rounded text-slate-300">PHP 8</span>
+            <span class="text-xs bg-slate-700 px-2 py-0.5 rounded text-slate-300">Leaflet.js</span>
+            <span class="text-xs bg-slate-700 px-2 py-0.5 rounded text-slate-300">MySQL</span>
+            <span class="text-xs bg-slate-700 px-2 py-0.5 rounded text-slate-300">Bootstrap</span>
+          </div>
+        </div>
+        <div class="p-6 pt-0 border-t border-slate-700/50 flex gap-3 mt-auto">
+          <button onclick="abrirModal('sistema-obras')" class="w-full text-center py-2 px-4 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm transition">
+            Ver Arquitectura 📐
+          </button>
+        </div>
+      </div>
+
+      <!-- Tarjeta 2: Tour 360 -->
+      <div class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden hover:border-emerald-500 transition shadow-lg flex flex-col justify-between">
+        <div class="p-6">
+          <div class="flex items-center justify-between gap-2 mb-3">
+            <span class="text-xs font-semibold px-2.5 py-1 bg-emerald-900/60 text-emerald-300 rounded-full border border-emerald-700">Web Interactiva</span>
+            <span class="text-xs text-slate-400 font-mono">JavaScript</span>
+          </div>
+          <h2 class="text-xl font-bold text-white mb-2">Visor Virtual Inmobiliario 360°</h2>
+          <p class="text-slate-300 text-sm mb-4">
+            Experiencia inmersiva en el navegador con navegación espacial por puntos de interacción (hotspots) y carga diferida.
+          </p>
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            <span class="text-xs bg-slate-700 px-2 py-0.5 rounded text-slate-300">JavaScript ES6</span>
+            <span class="text-xs bg-slate-700 px-2 py-0.5 rounded text-slate-300">Marzipano</span>
+            <span class="text-xs bg-slate-700 px-2 py-0.5 rounded text-slate-300">GitHub Pages</span>
+          </div>
+        </div>
+        <div class="p-6 pt-0 border-t border-slate-700/50 flex gap-3 mt-auto">
+          <button onclick="abrirModal('tour-360')" class="w-full text-center py-2 px-4 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-medium text-sm transition">
+            Ver Arquitectura 📐
+          </button>
+        </div>
+      </div>
+
+      <!-- Tarjeta 3: Backend Java -->
+      <div class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden hover:border-amber-500 transition shadow-lg flex flex-col justify-between">
+        <div class="p-6">
+          <div class="flex items-center justify-between gap-2 mb-3">
+            <span class="text-xs font-semibold px-2.5 py-1 bg-amber-900/60 text-amber-300 rounded-full border border-amber-700">Backend API</span>
+            <span class="text-xs text-slate-400 font-mono">Java / Spring</span>
+          </div>
+          <h2 class="text-xl font-bold text-white mb-2">LiterAlura API Challenge</h2>
+          <p class="text-slate-300 text-sm mb-4">
+            Servicio de consulta y persistencia de catálogo bibliográfico con consumo de API REST externa y serialización JSON.
+          </p>
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            <span class="text-xs bg-slate-700 px-2 py-0.5 rounded text-slate-300">Java 17</span>
+            <span class="text-xs bg-slate-700 px-2 py-0.5 rounded text-slate-300">Spring Boot</span>
+            <span class="text-xs bg-slate-700 px-2 py-0.5 rounded text-slate-300">Spring Data JPA</span>
+          </div>
+        </div>
+        <div class="p-6 pt-0 border-t border-slate-700/50 flex gap-3 mt-auto">
+          <button onclick="abrirModal('literalura')" class="w-full text-center py-2 px-4 rounded-lg bg-amber-600 hover:bg-amber-500 text-white font-medium text-sm transition">
+            Ver Arquitectura 📐
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Modal Deslizante / Drawer de Arquitectura -->
+  <div id="drawer-backdrop" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 hidden transition-opacity" onclick="cerrarModal()"></div>
+
+  <aside id="drawer" class="fixed top-0 right-0 z-50 w-full sm:w-[500px] h-full bg-slate-800 border-l border-slate-700 p-6 overflow-y-auto transform translate-x-full transition-transform duration-300 ease-in-out">
+    <div class="flex items-center justify-between pb-4 border-b border-slate-700 mb-6">
+      <h3 id="drawer-title" class="text-lg font-bold text-white">Detalle de Arquitectura</h3>
+      <button onclick="cerrarModal()" class="text-slate-400 hover:text-white text-xl font-bold p-1">&times;</button>
+    </div>
+
+    <div id="drawer-content" class="space-y-6 text-sm text-slate-300">
+      <!-- El contenido dinámico se inyecta con JavaScript -->
+    </div>
+  </aside>
+
+  <script>
+    // Datos técnicos de los proyectos para alimentar el modal interactivo
+    const proyectosData = {
+      'sistema-obras': {
+        titulo: "Sistema de Gestión & Seguimiento Territorial",
+        arquitectura: "Arquitectura multicapa Modelo-Controlador monolítico ligero optimizado en PHP 8. El frontend consume capas vectoriales mediante la API de Leaflet y se comunica con endpoints PHP para transacciones CRUD.",
+        puntosClave: [
+          "Diseño de esquema relacional normalizado con integridad referencial.",
+          "Manejo de consultas preparadas con PDO para evitar inyección SQL.",
+          "Filtrado territorial por coordenadas y persistencia de catálogos."
+        ],
+        credencialesDemo: "Usuario: admin_demo | Clave: DemoPass2026!",
+        github: "https://github.com/Johana2720"
+      },
+      'tour-360': {
+        titulo: "Visor Virtual Inmobiliario 360°",
+        arquitectura: "Aplicación cliente estática basada en el renderizador Marzipano WebGL. Se compone de escenas cúbicas o equirrectangulares vinculadas por nodos de navegación de baja latencia.",
+        puntosClave: [
+          "Optimización de texturas fotográficas para reducir tiempos de transferencia web.",
+          "Cálculo de orientaciones de cámara y coordenadas esféricas para los hotspots.",
+          "Despliegue automatizado y costo cero en GitHub Pages."
+        ],
+        credencialesDemo: "Acceso libre sin autenticación.",
+        github: "https://github.com/Johana2720/RecorridoVirtualVillaMagnaCancun"
+      },
+      'literalura': {
+        titulo: "LiterAlura API Challenge",
+        arquitectura: "Arquitectura en capas (Controller -> Service -> Repository) con Spring Boot. Utiliza un cliente HTTP para invocar Gutendex API, deserializa mediante Jackson y almacena registros únicos en base de datos relacional.",
+        puntosClave: [
+          "Traducción de JSON anidados a objetos de dominio Java con Records y DTOs.",
+          "Consultas personalizadas con Spring Data JPA y validación de entidades.",
+          "Interfaz interactiva por línea de comandos orientada a menús."
+        ],
+        credencialesDemo: "Ejecución local mediante Maven wrapper (`./mvnw spring-boot:run`).",
+        github: "https://github.com/Johana2720/LiteraturaChallenge"
+      }
+    };
+
+    function abrirModal(id) {
+      const data = proyectosData[id];
+      if (!data) return;
+
+      document.getElementById('drawer-title').innerText = data.titulo;
+      
+      const bullets = data.puntosClave.map(pt => `<li class="flex items-start gap-2"><span class="text-indigo-400 font-bold">•</span>${pt}</li>`).join('');
+
+      document.getElementById('drawer-content').innerHTML = `
+        <div>
+          <h4 class="text-xs uppercase font-bold tracking-wider text-indigo-400 mb-2">Visión de Arquitectura</h4>
+          <p class="bg-slate-900/70 p-3 rounded-lg border border-slate-700 text-slate-300 leading-relaxed">${data.arquitectura}</p>
+        </div>
+
+        <div>
+          <h4 class="text-xs uppercase font-bold tracking-wider text-indigo-400 mb-2">Retos Técnicos Resueltos</h4>
+          <ul class="space-y-2 bg-slate-900/70 p-3 rounded-lg border border-slate-700">${bullets}</ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs uppercase font-bold tracking-wider text-indigo-400 mb-2">Acceso / Entorno de Pruebas</h4>
+          <div class="bg-slate-950 p-3 rounded-lg border border-slate-800 font-mono text-xs text-emerald-400 flex items-center justify-between">
+            <span>${data.credencialesDemo}</span>
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-slate-700">
+          <a href="${data.github}" target="_blank" class="inline-flex items-center justify-center w-full py-2.5 px-4 rounded-lg bg-slate-700 hover:bg-slate-600 text-white font-medium text-sm transition">
+            Ver Código en GitHub →
+          </a>
+        </div>
+      `;
+
+      document.getElementById('drawer-backdrop').classList.remove('hidden');
+      document.getElementById('drawer').classList.remove('translate-x-full');
+    }
+
+    function cerrarModal() {
+      document.getElementById('drawer').classList.add('translate-x-full');
+      document.getElementById('drawer-backdrop').classList.add('hidden');
+    }
+  </script>
+</body>
+</html>
